@@ -1,7 +1,7 @@
 # material-remixer
 
 Remixer is a set of cross-platform libraries and protocols to allow live adjustment
-of apps and prototypes during the development process. It is supported on Android, iOS and Web.
+of apps and prototypes during the development process. It is supported on Android, iOS, and Web.
 
 ---
 
@@ -11,7 +11,7 @@ Remixer allows you to add variables that you can tweak and triggers that you can
 
 ### Triggers
 
-Triggers are a convenient way to simulate events happening, to rapidly test event handling. They just run a callback when pulled.
+Triggers are a convenient way to simulate events happening, to rapidly test event handling. They just run a callback when triggered.
 
 ### Variables
 
@@ -31,7 +31,7 @@ Remixer currently supports:
 
 ## Modes of operation
 
-Remixer will offer two modes of operation: local only, where your tweaks, triggers etc are only reflected on your local device; and cloud mode where any interaction with remixer is reflected across all devices and saved/synced to a cloud service.
+Remixer will offer two modes of operation: local only, where your tweaks, triggers etc are only reflected on your local device; and cloud mode where any tweaks and triggers are reflected across all devices and saved/synced to a cloud service.
 
 ### Local-only mode
 Local only mode saves the variable values across application restarts and allows you to share the current configuration as a JSON file.
