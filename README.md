@@ -24,7 +24,6 @@ A Remixer variable has a unique key associated with it, and supports the followi
 
 Remixer also supports setting a list of values a variable can be set to. For example, a color variable can be configured so that its value can only be changed to red, blue or yellow.
 
-
 ## Triggers
 
 The Remixer library also provides a way to create and use Triggers. Triggers are a convenient way to simulate events in your app, to rapidly test event handling. They just run a callback when triggered.
@@ -46,7 +45,6 @@ If you just want to use Remixer to prototype something by yourself, and the in-a
 
 There is no need to do any code changes when you’re shipping your app. Just use Remixer’s export functionality to export all the values to a single file, and Remixer will take care of the rest. Instead of fetching and syncing values, Remixer will just use this file to get the values for each variable.
 
-
 ## State of development
 
 |                                                                 |   Android        | iOS |     Web     |
@@ -63,11 +61,9 @@ There is no need to do any code changes when you’re shipping your app. Just us
 | Integration with design tools (Sketch et al.)                   | ❌               | ❌  | ❌          |
 | Production mode                                                 | ❌               | ❌  | ❌          |
 
-
 We expect all of these features to be eventually supported on all platforms as these define our vision for what Remixer should be.
 
 Notes: <sup>1</sup> Android's SeekBar only supports integers, we're working on finding a solution that lets us use floats or implement our own.
-
 
 ## Repositories
 
