@@ -1,27 +1,28 @@
 ## ![remixer](docs/assets/lockup_remixer_icon_horizontal_dark.png)
 
-Remixer helps teams use and refine design specs by providing an abstraction for these values that is accessible and configurable from outside the app itself. This abstraction is called a Variable. A Variable has a key (e.g. "primaryColor"), a type (e.g. Color), and a value (e.g. red). Instead of hard-coding values, engineers can use Variables to allow anyone on their team to refine them during development without even having to restart the app. Refinements can be done from inside the app itself, from a web dashboard or through plugins for tools like Sketch.
+Remixer helps teams use and refine design specs by providing an abstraction for these values that is accessible and configurable from outside the app itself. This abstraction is called a variable. A variable has a key (e.g. "primaryColor"), a type (e.g. Color), and a value (e.g. red). Instead of hard-coding values, engineers can use variables to allow anyone on their team to refine them during development without even having to restart the app. Refinements can be done from inside the app itself, from a web dashboard, or through plugins for other design tools.
 
-The Remixer SDK is available for iOS, Android and Web.
+The Remixer SDK is currently under development and will be available for iOS, Android and Web. Please review the State of Development table for status of each platform.
 
 ## Variables
 
-A Variable has a unique key associated with it, and supports the following data types:
+A Remixer variable has a unique key associated with it, and supports the following data types:
 
 
 - **Numbers** 
-	- Example: Use a numeric Variable to define how long an animation should run for.
-	- If you want to limit a numeric Variable to be inside a certain range you can use a Range Variable. A Range Variable can also be configured to be continuous or discrete (fixed increment value).
+	- Example: Use a numeric variable to define how long an animation should run for.
+	- If you want to limit a numeric variable to be inside a certain range you can use a Range variable. A range variable can also be configured to be continuous or discrete (fixed increment value).
 
 - **Colors**
-	- Example: Use a color Variable to reference a code in your color palette instead of hardcoding its value. This way there’s no need to update every instance of the old color in your codebase when the palette changes.
+	- Example: Use a color variable to reference a code in your color palette instead of hardcoding its value. This way there’s no need to update every instance of the old color in your codebase when the palette changes.
 
 - **Booleans**
-	- Example: Use a boolean Variable to hide or show a view during development.
-- **Strings**
-	- Example: Use a string Variable to easily try different options for a header.
+	- Example: Use a boolean variable to hide or show a view during development.
 
-Remixer also supports setting a list of values a Variable can be set to. For example, a color Variable can be configured so that its value can only be changed to red, blue or yellow.
+- **Strings**
+	- Example: Use a string variable to easily try different options for a header.
+
+Remixer also supports setting a list of values a variable can be set to. For example, a color variable can be configured so that its value can only be changed to red, blue or yellow.
 
 
 ## Triggers
@@ -35,7 +36,7 @@ Remixer will offer two modes of operation: Cloud and Local.
 
 ### Cloud
 
-Cloud mode is the way to go if you want to use Remixer with a team. In this mode, Variables are defined in a web dashboard and referenced in code. Variables are accessible and configurable through multiple tools, and changes are propagated in real-time. Our first implementation will use Firebase, but we expect to offer other options in the future.
+Cloud mode is the way to go if you want to use Remixer with a team. In this mode, variables are defined in a web dashboard and referenced in code. Variables are accessible and configurable through multiple tools, and changes are propagated in real-time. Our first implementation will use Firebase, but we expect to offer other options in the future.
 
 ### Local
 
@@ -43,7 +44,7 @@ If you just want to use Remixer to prototype something by yourself, and the in-a
 
 ## Going to production
 
-There is no need to do any code changes when you’re shipping your app. Just use Remixer’s export functionality to export all the values to a single file, and Remixer will take care of the rest. Instead of fetching and syncing values, Remixer will just use this file to get the values for each Variable.
+There is no need to do any code changes when you’re shipping your app. Just use Remixer’s export functionality to export all the values to a single file, and Remixer will take care of the rest. Instead of fetching and syncing values, Remixer will just use this file to get the values for each variable.
 
 
 ## State of development
@@ -53,17 +54,19 @@ There is no need to do any code changes when you’re shipping your app. Just us
 | String tweaking                                                 |      ✅          | ✅  | ✅          |
 | Boolean tweaking                                                |      ✅          | ✅  | ✅          |
 | Color tweaking                                                  |      ✅          | ✅  | ✅          |
-| Number tweaking                                                 | in progress [^1] | ✅  | ✅          |
+| Number tweaking                                                 | in progress <sup>1</sup>| ✅  | ✅          |
 | Local storage of variable values                                | in progress      | ✅  | ✅          |
 | Sync values across devices                                      | ❌               | ✅  | in progress |
+| Triggers                                                        | ❌               | ❌  | ❌          |
 | Create variables from web dashboard                             | ❌               | ❌  | ❌          |
 | Override configuration of existing variables from web dashboard | ❌               | ❌  | ❌          |
 | Integration with design tools (Sketch et al.)                   | ❌               | ❌  | ❌          |
+| Production mode                                                 | ❌               | ❌  | ❌          |
 
 
 We expect all of these features to be eventually supported on all platforms as these define our vision for what Remixer should be.
 
-Notes: [^1]: Android's SeekBar only supports integers, we're working on finding a solution that lets us use floats or implement our own.
+Notes: <sup>1</sup> Android's SeekBar only supports integers, we're working on finding a solution that lets us use floats or implement our own.
 
 
 ## Repositories
