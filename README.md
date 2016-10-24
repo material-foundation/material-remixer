@@ -21,8 +21,7 @@ A Variable has a unique key associated with it, and supports the following data 
 - **Strings**
 	- Example: Use a string Variable to easily try different options for a header.
 
-- **Lists**
-	- Remixer also supports setting a list of values a Variable can be set to. For example, a color Variable can be configured so that its value can only be changed to red, blue or yellow.
+Remixer also supports setting a list of values a Variable can be set to. For example, a color Variable can be configured so that its value can only be changed to red, blue or yellow.
 
 
 ## Triggers
