@@ -1,6 +1,6 @@
-## ![remixer](docs/assets/lockup_remixer_icon_horizontal_dark.png)
+# ![remixer](docs/assets/lockup_remixer_icon_horizontal_dark.png)
 
-Remixer helps teams use and refine design specs by providing an abstraction for these values that is accessible and configurable from outside the app itself. This abstraction is called a variable. A variable has a key (e.g. "primaryColor"), a type (e.g. Color), and a value (e.g. red). Instead of hard-coding values, engineers can use variables to allow anyone on their team to refine them during development without even having to restart the app. Refinements can be done from inside the app itself, from a web dashboard, or through plugins for other design tools.
+Remixer helps teams use and refine design specs by providing an abstraction for these values that is accessible and configurable from both inside and outside the app itself. This abstraction is called a variable. A variable has a key (e.g. "primaryColor"), a type (e.g. Color), and a value (e.g. red). Instead of hard-coding values, engineers can use variables to allow anyone on their team to refine them during development without even having to restart the app. Refinements can be done from inside the app itself, from a web dashboard, or through plugins for other design tools.
 
 The Remixer SDK is currently under development and will be available for iOS, Android and Web. Please review the State of Development table for status of each platform.
 
@@ -49,10 +49,10 @@ There is no need to make any code changes when shipping your app. Remixer can ex
 
 |                                                                 |   Android        | iOS |     Web     |
 |-----------------------------------------------------------------|:----------------:|:---:|:-----------:|
-| String tweaking                                                 |      ✅          | ✅  | ✅          |
-| Boolean tweaking                                                |      ✅          | ✅  | ✅          |
-| Color tweaking                                                  |      ✅          | ✅  | ✅          |
-| Number tweaking                                                 | in progress <sup>1</sup>| ✅  | ✅          |
+| String variable                                                 |      ✅          | ✅  | ✅          |
+| Boolean variable                                                |      ✅          | ✅  | ✅          |
+| Color variable                                                  |      ✅          | ✅  | ✅          |
+| Number variable                                                 | in progress <sup>1</sup>| ✅  | ✅          |
 | Local storage of variable values                                | in progress      | ✅  | ✅          |
 | Sync values across devices                                      | ❌               | ✅  | in progress |
 | Triggers                                                        | ✅               | ❌  | ❌          |
