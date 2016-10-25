@@ -55,7 +55,7 @@ There is no need to make any code changes when shipping your app. Remixer can ex
 | Number tweaking                                                 | in progress <sup>1</sup>| ✅  | ✅          |
 | Local storage of variable values                                | in progress      | ✅  | ✅          |
 | Sync values across devices                                      | ❌               | ✅  | in progress |
-| Triggers                                                        | ❌               | ✅  | ❌          |
+| Triggers                                                        | ✅               | ❌  | ❌          |
 | Create variables from web dashboard                             | ❌               | ❌  | ❌          |
 | Override configuration of existing variables from web dashboard | ❌               | ❌  | ❌          |
 | Integration with design tools (Sketch et al.)                   | ❌               | ❌  | ❌          |
