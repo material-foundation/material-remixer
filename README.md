@@ -43,7 +43,7 @@ If you just want to use Remixer to prototype something by yourself, and the in-a
 
 ## Going to production
 
-There is no need to do any code changes when you’re shipping your app. Just use Remixer’s export functionality to export all the values to a single file, and Remixer will take care of the rest. Instead of fetching and syncing values, Remixer will just use this file to get the values for each variable.
+There is no need to make any code changes when shipping your app. Remixer can export all the values to a single static file that can be used for each variable. In production, Remixer will disable the UI for all platforms and prevent any further fetching or syncing of values. Please review the State of Development table for the availability of this feature.
 
 ## State of development
 
@@ -55,7 +55,7 @@ There is no need to do any code changes when you’re shipping your app. Just us
 | Number tweaking                                                 | in progress <sup>1</sup>| ✅  | ✅          |
 | Local storage of variable values                                | in progress      | ✅  | ✅          |
 | Sync values across devices                                      | ❌               | ✅  | in progress |
-| Triggers                                                        | ❌               | ❌  | ❌          |
+| Triggers                                                        | ❌               | ✅  | ❌          |
 | Create variables from web dashboard                             | ❌               | ❌  | ❌          |
 | Override configuration of existing variables from web dashboard | ❌               | ❌  | ❌          |
 | Integration with design tools (Sketch et al.)                   | ❌               | ❌  | ❌          |
@@ -72,4 +72,4 @@ Platform specific libraries and tools can be found in the following GitHub repos
 - [iOS](https://github.com/material-foundation/material-remixer-ios) - Remixer for iOS.
 - [Android](https://github.com/material-foundation/material-remixer-android) - Remixer for Android.
 - [Web](https://github.com/material-foundation/material-remixer-web) - Remixer for Web.
-- Dashboard - Remixer web dashboard for all platforms (avaialble soon).
+- Dashboard - Remixer web dashboard for all platforms (available soon).
