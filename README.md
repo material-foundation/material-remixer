@@ -28,7 +28,6 @@ Remixer also supports setting a list of values a variable can be set to. For exa
 
 The Remixer library also provides a way to create and use Triggers. Triggers are a convenient way to simulate events in your app, to rapidly test event handling. They just run a callback when triggered.
 
-
 ## Modes of operation
 
 Remixer will offer two modes of operation: Cloud and Local.
@@ -47,8 +46,8 @@ There is no need to make any code changes when shipping your app. Remixer can ex
 
 ## State of development
 
-|                                                                 |   Android        | iOS |     Web     |
-|-----------------------------------------------------------------|:----------------:|:---:|:-----------:|
+| Feature                                                         |   Android        | iOS |     Web     |
+|:----------------------------------------------------------------|:----------------:|:---:|:-----------:|
 | String variable                                                 |      ✅          | ✅  | ✅          |
 | Boolean variable                                                |      ✅          | ✅  | ✅          |
 | Color variable                                                  |      ✅          | ✅  | ✅          |
@@ -73,3 +72,15 @@ Platform specific libraries and tools can be found in the following GitHub repos
 - [Android](https://github.com/material-foundation/material-remixer-android) - Remixer for Android.
 - Web - Remixer for Web (available soon).
 - Dashboard - Remixer web dashboard for all platforms (available soon).
+
+## Is Material Foundation affiliated with Google?
+
+Yes, the [Material Foundation](https://github.com/material-foundation) organization is one of Google's new homes for tools and frameworks related to our [Material Design](https://material.io) system. Please check out our blog post [Design is Never Done](https://design.google.com/articles/design-is-never-done/) for more information regarding Material Design and how Remixer integrates with the system.
+
+## Contributing
+
+We gladly welcome contributions! If you have found a bug, have questions, or wish to contribute, please follow our [Contributing Guidelines](https://github.com/material-foundation/material-remixer/blob/master/CONTRIBUTING.md).
+
+## License
+
+© Google, 2016. Licensed under an [Apache-2](https://github.com/material-foundation/material-remixer/blob/master/LICENSE) license.
