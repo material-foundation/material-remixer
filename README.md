@@ -46,7 +46,7 @@ There is no need to make any code changes when shipping your app. Remixer can ex
 
 ## State of development
 
-| Feature                                                         |   Android        | iOS |     Web     |
+| Feature                                                         |   [Android](https://github.com/material-foundation/material-remixer-android)        | [iOS](https://github.com/material-foundation/material-remixer-ios/) |     Web     |
 |:----------------------------------------------------------------|:----------------:|:---:|:-----------:|
 | String variable                                                 |      ✅          | ✅  | ✅          |
 | Boolean variable                                                |      ✅          | ✅  | ✅          |
