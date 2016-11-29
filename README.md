@@ -1,6 +1,6 @@
 ![remixer](https://cdn.rawgit.com/material-foundation/material-remixer/master/docs/assets/lockup_remixer_icon_horizontal_dark_small.svg)
 
-Remixer helps teams use and refine design specs by providing an abstraction for these values that is accessible and configurable from both inside and outside the app itself. This abstraction is called a variable. A variable has a key (e.g. "primaryColor"), a type (e.g. Color), and a value (e.g. red). Instead of hard-coding values, engineers can use variables to allow anyone on their team to refine them during development without even having to restart the app. Refinements can be done from inside the app itself, from a web dashboard, or through plugins for other design tools.
+Remixer helps teams use and refine design specs by providing an abstraction for these values that is accessible and configurable from both inside and outside the app itself. This abstraction is called a variable. A variable has a key (e.g. "primaryColor"), a type (e.g. Color), and a value (e.g. red). Instead of hard-coding values, engineers can use variables to allow anyone on their team to refine them during development without even having to restart the app. Refinements can be done from inside the app itself, from a web remote controller, or through plugins for other design tools.
 
 The Remixer SDK is currently under development and will be available for iOS, Android and Web. Please review the State of Development table for status of each platform.
 
@@ -34,7 +34,7 @@ Remixer will offer two modes of operation: Cloud and Local.
 
 ### Cloud
 
-Cloud mode is the way to go if you want to use Remixer with a team. In this mode, variables are defined in a web dashboard and referenced in code. Variables are accessible and configurable through multiple tools, and changes are propagated in real-time. Our first implementation will use Firebase, but we expect to offer other options in the future.
+Cloud mode is the way to go if you want to use Remixer with a team. In this mode, variables are defined in a web remote and referenced in code. Variables are accessible and configurable through multiple tools, and changes are propagated in real-time. Our first implementation will use Firebase, but we expect to offer other options in the future.
 
 ### Local
 
@@ -46,23 +46,7 @@ There is no need to make any code changes when shipping your app. Remixer can ex
 
 ## State of development
 
-| Feature                                                         |   [Android](https://github.com/material-foundation/material-remixer-android)        | [iOS](https://github.com/material-foundation/material-remixer-ios/) |     Web     |
-|:----------------------------------------------------------------|:----------------:|:---:|:-----------:|
-| String variable                                                 |      ✅          | ✅  | ✅          |
-| Boolean variable                                                |      ✅          | ✅  | ✅          |
-| Color variable                                                  |      ✅          | ✅  | ✅          |
-| Number variable                                                 | in progress <sup>1</sup>| ✅  | ✅          |
-| Local storage of variable values                                | in progress      | ✅  | ✅          |
-| Sync values across devices                                      | ❌               | ✅  | in progress |
-| Triggers                                                        | ✅               | ❌  | ❌          |
-| Create variables from web dashboard                             | ❌               | ❌  | ❌          |
-| Override configuration of existing variables from web dashboard | ❌               | ❌  | ❌          |
-| Integration with design tools (Sketch et al.)                   | ❌               | ❌  | ❌          |
-| Production mode                                                 | ❌               | ❌  | ❌          |
-
-We expect all of these features to be eventually supported on all platforms as these define our vision for what Remixer should be.
-
-Notes: <sup>1</sup> Android's SeekBar only supports integers, we're working on finding a solution that lets us use floats or implement our own.
+Visit our [State of Development](https://github.com/material-foundation/material-remixer/wiki/State-of-Development) wiki for the current roadmap and status of development for each platform.
 
 ## Repositories
 
@@ -71,7 +55,7 @@ Platform specific libraries and tools can be found in the following GitHub repos
 - [iOS](https://github.com/material-foundation/material-remixer-ios) - Remixer for iOS.
 - [Android](https://github.com/material-foundation/material-remixer-android) - Remixer for Android.
 - Web - Remixer for Web (available soon).
-- Dashboard - Remixer web dashboard for all platforms (available soon).
+- Web Remote - Remixer web remote controller for all platforms (available soon).
 
 ## Is Material Foundation affiliated with Google?
 
