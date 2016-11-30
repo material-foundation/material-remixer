@@ -54,7 +54,7 @@ Platform specific libraries and tools can be found in the following GitHub repos
 
 - [iOS](https://github.com/material-foundation/material-remixer-ios) - Remixer for iOS.
 - [Android](https://github.com/material-foundation/material-remixer-android) - Remixer for Android.
-- Web - Remixer for Web (available soon).
+- [Web](https://github.com/material-foundation/material-remixer-web) - Remixer for Web.
 - Web Remote - Remixer web remote controller for all platforms (available soon).
 
 ## Is Material Foundation affiliated with Google?
