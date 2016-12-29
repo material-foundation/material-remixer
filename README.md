@@ -24,10 +24,6 @@ A Remixer variable has a unique key associated with it, and supports the followi
 
 Remixer also supports setting a list of values a variable can be set to. For example, a color variable can be configured so that its value can only be changed to red, blue or yellow.
 
-## Triggers
-
-The Remixer library also provides a way to create and use Triggers. Triggers are a convenient way to simulate events in your app, to rapidly test event handling. They just run a callback when triggered.
-
 ## Modes of operation
 
 Remixer will offer two modes of operation: Cloud and Local.
