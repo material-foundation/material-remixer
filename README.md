@@ -24,6 +24,10 @@ A Remixer variable has a unique key associated with it, and supports the followi
 
 Remixer also supports setting a list of values a variable can be set to. For example, a color variable can be configured so that its value can only be changed to red, blue or yellow.
 
+## Remote Controller
+
+Enabling the remote controller will allow you to share a dedicated web page containing the variables defined in your app. Your team can use the web remote controller to update variables and see those changes reflected back in your app in real-time.
+
 ## Modes of operation
 
 Remixer will offer two modes of operation: Cloud and Local.
