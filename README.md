@@ -24,25 +24,13 @@ A Remixer variable has a unique key associated with it, and supports the followi
 
 Remixer also supports setting a list of values a variable can be set to. For example, a color variable can be configured so that its value can only be changed to red, blue or yellow.
 
-## Modes of operation
+## Web Remote Controller
 
-Remixer will offer two modes of operation: Cloud and Local.
+If enabled, the variables defined in your app will be exposed on a remote controller website. Share the link to this site with your teammates from within the overlay or by emailing them. The remote controller allows updating the defined variables, and changes will be propagated in real-time across associated apps.
 
-### Cloud
+## Roadmap and State of development
 
-Cloud mode is the way to go if you want to use Remixer with a team. In this mode, variables are defined in a web remote and referenced in code. Variables are accessible and configurable through multiple tools, and changes are propagated in real-time. Our first implementation will use Firebase, but we expect to offer other options in the future.
-
-### Local
-
-If you just want to use Remixer to prototype something by yourself, and the in-app overlay is all you need for refining values, then Local mode is for you. Variables are defined in code, and remixer will use your device’s local storage to store any refinements you make.
-
-## Going to production
-
-There is no need to make any code changes when shipping your app. Remixer can export all the values to a single static file that can be used for each variable. In production, Remixer will disable the UI for all platforms and prevent any further fetching or syncing of values. Please review the State of Development table for the availability of this feature.
-
-## State of development
-
-Visit our [State of Development](https://github.com/material-foundation/material-remixer/wiki/State-of-Development) wiki for the current roadmap and status of development for each platform.
+Development of Remixer is ongoing across the supported platforms. Visit our [State of Development](https://github.com/material-foundation/material-remixer/wiki/State-of-Development) wiki which details the status of development for each platform. In addition, visit our current [Roadmap](https://github.com/material-foundation/material-remixer/wiki/Roadmap) wiki for a list of features planned for future releases.
 
 ## Repositories
 
