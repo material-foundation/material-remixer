@@ -1,45 +1,27 @@
 ![remixer](https://cdn.rawgit.com/material-foundation/material-remixer/master/docs/assets/lockup_remixer_icon_horizontal_dark_small.svg)
 
-Remixer helps teams use and refine design specs by providing an abstraction for these values that is accessible and configurable from both inside and outside the app itself. This abstraction is called a variable. A variable has a key (e.g. "primaryColor"), a type (e.g. Color), and a value (e.g. red). Instead of hard-coding values, engineers can use variables to allow anyone on their team to refine them during development without even having to restart the app. Refinements can be done from inside the app itself, from a web remote controller, or through plugins for other design tools.
+Remixer allows you to easily define UI variables in your app that can be adjusted while it is running. This can help you and your team to iterate very quickly on design issues because you don't need to rebuild or even restart your app to see the changes reflected.
 
-The Remixer SDK is currently under development and will be available for iOS, Android and Web. Please review the State of Development table for status of each platform.
+Remixer is available in three platforms ([Android](http://github.com/material-foundation/material-remixer-android), [iOS](http://github.com/material-foundation/material-remixer-ios) and [Web](http://github.com/material-foundation/material-remixer-js)) and comes with a helpful [Remote Controller](http://github.com/material-foundation/material-remixer-remote-web) that lets you interact with variables from another device.
+
+| Project | Continuous Integration | Code Coverage | Release |
+|---------|------------------------|---------------|---------|
+| [Android](http://github.com/material-foundation/material-remixer-android) | [![TravisCI Build Status](https://travis-ci.org/material-foundation/material-remixer-android.svg?branch=develop)](https://travis-ci.org/material-foundation/material-remixer-android) [![CircleCI Build Status](https://circleci.com/gh/material-foundation/material-remixer-android.svg?style=svg)](https://circleci.com/gh/material-foundation/material-remixer-android) | [![codecov](https://codecov.io/gh/material-foundation/material-remixer-android/branch/develop/graph/badge.svg)](https://codecov.io/gh/material-foundation/material-remixer-android) | [![Release](https://jitpack.io/v/material-foundation/material-remixer-android.svg )](https://jitpack.io/#material-foundation/material-remixer-android) |
+| [iOS](http://github.com/material-foundation/material-remixer-ios) | [![Build Status](https://travis-ci.org/material-foundation/material-remixer-ios.svg?branch=develop)](https://travis-ci.org/material-foundation/material-remixer-ios) | [![codecov](https://codecov.io/gh/material-foundation/material-remixer-ios/branch/develop/graph/badge.svg)](https://codecov.io/gh/material-foundation/material-remixer-ios) | [![CocoaPods](https://img.shields.io/cocoapods/v/Remixer.svg)]() |
+| [Web](http://github.com/material-foundation/material-remixer-js) | [![Build Status](https://travis-ci.org/material-foundation/material-remixer-js.svg?branch=develop)](https://travis-ci.org/material-foundation/material-remixer-js) | [![codecov](https://codecov.io/gh/material-foundation/material-remixer-js/branch/develop/graph/badge.svg)](https://codecov.io/gh/material-foundation/material-remixer-js) | [![npm version](https://badge.fury.io/js/material-remixer.svg)](https://badge.fury.io/js/material-remixer) |
+| [Remote Controller](http://github.com/material-foundation/material-remixer-remote-web) | [![Build Status](https://travis-ci.org/material-foundation/material-remixer-remote-web.svg?branch=develop)](https://travis-ci.org/material-foundation/material-remixer-remote-web) |  | [![npm version](https://badge.fury.io/js/material-remixer-remote-web.svg)](https://badge.fury.io/js/material-remixer-remote-web) |
 
 ## Variables
 
-A Remixer variable has a unique key associated with it, and supports the following data types:
+A Remixer variable has a unique key associated with it, and can be a Boolean, Color, Number (represented as floats) or String.
 
-
-- **Numbers** 
-	- Example: Use a numeric variable to define how long an animation should run for.
-	- If you want to limit a numeric variable to be inside a certain range you can use a Range variable. A range variable can also be configured to be continuous or discrete (fixed increment value).
-
-- **Colors**
-	- Example: Use a color variable to reference a code in your color palette instead of hardcoding its value. This way there’s no need to update every instance of the old color in your codebase when the palette changes.
-
-- **Booleans**
-	- Example: Use a boolean variable to hide or show a view during development.
-
-- **Strings**
-	- Example: Use a string variable to easily try different options for a header.
-
-Remixer also supports setting a list of values a variable can be set to. For example, a color variable can be configured so that its value can only be changed to red, blue or yellow.
+Remixer lets you define a range of values (for variables of type Number), or limit values to members of a list you provide. This lets you ensure that values always _make sense_.
 
 ## Web Remote Controller
 
-If enabled, the variables defined in your app will be exposed on a remote controller website. Share the link to this site with your teammates from within the overlay or by emailing them. The remote controller allows updating the defined variables, and changes will be propagated in real-time across associated apps.
+A separate project, the [Remote Controller](http://github.com/material-foundation/material-remixer-remote-web), is provided for those times when by interacting with Remixer you may make it hard to see the UI you're adjusting. The Remote Controller lets you adjust variable values in a separate device so you can properly appreciate all changes.
 
-## Roadmap and State of development
-
-Development of Remixer is ongoing across the supported platforms. Visit our [State of Development](https://github.com/material-foundation/material-remixer/wiki/State-of-Development) wiki which details the status of development for each platform. In addition, visit our current [Roadmap](https://github.com/material-foundation/material-remixer/wiki/Roadmap) wiki for a list of features planned for future releases.
-
-## Repositories
-
-Platform specific libraries and tools can be found in the following GitHub repos:
-
-- [iOS](https://github.com/material-foundation/material-remixer-ios) - Remixer for iOS.
-- [Android](https://github.com/material-foundation/material-remixer-android) - Remixer for Android.
-- [JavaScript](https://github.com/material-foundation/material-remixer-js) - Remixer for JavaScript.
-- [Web Remote](https://github.com/material-foundation/material-remixer-remote-web) - Remixer web remote controller for all platforms.
+Since there is a bit of platform specific setup in each case, look at the documentation in your platform's Remixer Repo  and the Remote Controller's for more information.
 
 ## Is Material Foundation affiliated with Google?
 
