@@ -2,7 +2,7 @@
 
 Remixer allows you to easily define UI variables in your app that can be adjusted while it is running. This can help you and your team to iterate very quickly on design issues because you don't need to rebuild or even restart your app to see the changes reflected.
 
-Remixer is available in three platforms ([Android](http://github.com/material-foundation/material-remixer-android), [iOS](http://github.com/material-foundation/material-remixer-ios) and [JavaScript](http://github.com/material-foundation/material-remixer-js)) and comes with a helpful [Remote Controller](http://github.com/material-foundation/material-remixer-remote-web) that lets you interact with variables from another device.
+Remixer is available in three platforms ([Android](http://github.com/material-foundation/material-remixer-android), [iOS](http://github.com/material-foundation/material-remixer-ios) and [JavaScript](http://github.com/material-foundation/material-remixer-js)) and all of them support setting up a [Remote Controller](http://github.com/material-foundation/material-remixer-remote-web) that lets you change variables from a web dashboard.
 
 | Project | Continuous Integration | Code Coverage | Release |
 |---------|------------------------|---------------|---------|
@@ -13,15 +13,15 @@ Remixer is available in three platforms ([Android](http://github.com/material-fo
 
 ## Variables
 
-A Remixer variable has a unique key associated with it, and can be a Boolean, Color, Number (represented as floats) or String.
+A Remixer variable has a unique key associated with it, and can be of type Boolean, Color, Number or String.
 
-Remixer lets you define a range of values (for variables of type Number), or limit values to members of a list you provide. This lets you ensure that values always _make sense_.
+Variables support being constrained to a limited set of values to give you better control of what can change. Numeric variables can also be configured as continuous or discrete ranges.
 
 ## Web Remote Controller
 
-A separate project, the [Remote Controller](http://github.com/material-foundation/material-remixer-remote-web), is provided for those times when by interacting with Remixer you may make it hard to see the UI you're adjusting. The Remote Controller lets you adjust variable values in a separate device so you can properly appreciate all changes.
+Remixer can be configured to use a [Remote Controller](http://github.com/material-foundation/material-remixer-remote-web). In this mode your variables can be changed from outside the app, allowing you to collaborate with other people and keep your UI free of overlays. Make sure to check out the [Remote Controller repo](http://github.com/material-foundation/material-remixer-remote-web) to learn more about this feature.
 
-Since there is a bit of platform specific setup in each case, look at the documentation in your platform's Remixer Repo  and the Remote Controller's for more information.
+For details on how to set up this mode in your app, please visit one of the platform specific repos.
 
 ## Is Material Foundation affiliated with Google?
 
