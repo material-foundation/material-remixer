@@ -1,4 +1,12 @@
-![remixer](https://cdn.rawgit.com/material-foundation/material-remixer/master/docs/assets/lockup_remixer_icon_horizontal_dark_small.svg)
+# DEPRECATED
+
+Remixer is no longer in active development.  It was an experiment by the Material Design team at Google, which we may return to some day, but at this time we have no plans to continue development here.
+
+For more information about the projects we're actively working on, please visit:
+
+[material.io](https://material.io/)
+
+---
 
 Remixer allows you to easily define UI variables in your app that can be adjusted while it is running. This can help you and your team to iterate very quickly on design issues because you don't need to rebuild or even restart your app to see the changes reflected.
 
